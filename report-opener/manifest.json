@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Daily Report Opener",
+  "version": "1.6",
+  "description": "Opens today's dated report folders and the PDFs inside them, in a custom order. Can print them merged in that order.",
+  "permissions": ["activeTab", "scripting", "storage", "tabs"],
+  "host_permissions": ["file:///*", "file://*/*"],
+  "action": { "default_popup": "popup.html", "default_title": "Open today's reports" },
+  "options_page": "options.html"
+}

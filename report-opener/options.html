@@ -1,0 +1,21 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Daily Report Opener – Settings</title>
+<style>
+body{font:14px system-ui,sans-serif;max-width:820px;margin:24px auto;padding:0 16px}
+.row{display:flex;gap:6px;margin:4px 0;align-items:center}
+.row input{padding:4px 6px} .row input.f{width:260px} .row input.n{flex:1}
+button{padding:4px 10px;cursor:pointer} .muted{color:#666;font-size:12px}
+</style></head>
+<body>
+<h2>Daily Report Opener</h2>
+<p class="muted">Each row opens one tab, top to bottom. Folder prefix is everything before the date
+(e.g. <code>LBU_DAILY_REPORTS_</code>); today's date (YYYY-MM-DD) is added automatically.</p>
+<p>Index page URL: <input id="idx" style="width:560px"></p>
+<p>Print: read files from <input id="dfrom" style="width:220px"> as <input id="dto" style="width:160px"> <span class="muted">(maps the share to your S: drive; leave blank to disable)</span></p>
+<div id="rows"></div>
+<p><button id="add">+ Add row</button></p>
+<p><label><input type="checkbox" id="fb"> If today's folder is missing, use the newest one available</label></p>
+<p><button id="save">Save</button> <button id="reset">Reset to defaults</button> <span id="msg" class="muted"></span></p>
+<script src="common.js"></script>
+<script src="options.js"></script>
+</body></html>
